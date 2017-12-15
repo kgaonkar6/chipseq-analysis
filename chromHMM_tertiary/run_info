@@ -1,0 +1,11 @@
+STATE_NUM="10"
+FOLD="10"
+#Only acceptable hg19, mm10
+REF="hg19"
+#fullpath
+CELLMARK=""
+#Control/Group/Sample
+GROUP=
+WORK_DIR=
+INPUT_DIR=
+

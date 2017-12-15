@@ -1,0 +1,4 @@
+awk -F "\t" '{if($9 ~/exon_number "1"/)print $1"\t"$4-2000"\t"$4+2000"\t"$7}' /data2/bsi/RandD/MAPRSeq/2.0/refs/Ensemble_GeneExon_hg19.mod.gtf> /data2/bsi/staff_analysis/m139467/ChromHMM/edu/mit/compbio/ChromHMM/ChromHMM/COORDS/ensemble_hg19/ensemble.hg19.TSS2kb.bed
+awk -F "\t" '{print $1"\t"$4"\t"$5"\t"$7}' /data2/bsi/RandD/MAPRSeq/2.0/refs/Ensemble_GeneExon_hg19.mod.gtf> /data2/bsi/staff_analysis/m139467/ChromHMM/edu/mit/compbio/ChromHMM/ChromHMM/COORDS/ensemble_hg19/ensemble.hg19.exon.bed
+cp ../hg19/CpGIsland.hg19.bed.gz  ./
+cp ../hg19/laminB1lads.hg19.bed.gz ./
