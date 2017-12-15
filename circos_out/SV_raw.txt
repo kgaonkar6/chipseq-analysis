@@ -1,0 +1,12 @@
+Mapping_Ori	Total_Supporting_Pairs	ChrA	Start 	 End 	Size_A	ChrB	Start 	 End 	Size_B	SV_Type
+forward, forward	14	chr1	121,485,138 	 121,485,312 	175	chr5	176,749,586 	 176,752,544 	2959	Translocation
+forward, reverse	13	chr18	   20,358,027 	   20,360,831 	2805	chr18	   20,690,634 	   20,695,631 	4998	Deletion
+forward, reverse	10	chr20	   14,734,032 	   14,738,442 	4411	chr20	   14,996,239 	   15,001,586 	5348	Deletion
+forward, reverse	17	chr21	   38,108,497 	   38,120,625 	12129	chr21	   38,703,484 	   38,708,851 	5368	Deletion
+reverse, forward	12	chr3	   52,049,283 	   52,055,045 	5763	chr7	   39,188,762 	   39,195,609 	6848	Translocation
+forward, forward	11	chr3	   52,070,612 	   52,076,508 	5897	chr3	118,390,232 	 118,396,028 	5797	Inversion
+forward, reverse	13	chr3	137,181,912 	 137,184,245 	2334	chr3	153,615,669 	 153,621,854 	6186	Deletion
+forward, forward	17	chr3	169,254,808 	 169,261,997 	7190	chr4	   90,302,123 	   90,305,659 	3537	Translocation
+forward, forward	14	chr8	   79,180,537 	   79,183,416 	2880	chr8	137,731,113 	 137,739,286 	8174	Inversion
+reverse, reverse	22	chr8	   97,161,050 	   97,165,492 	4443	chr8	   97,288,908 	   97,294,207 	5300	Inversion
+reverse, reverse	10	chr8	114,152,160 	 114,154,901 	2742	chr8	114,593,782 	 114,598,321 	4540	Seg-Dup
