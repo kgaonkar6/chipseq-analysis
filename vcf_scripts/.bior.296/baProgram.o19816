@@ -1,33 +1,0 @@
-Options specified: 
-v varscan_DW_subset.vcf000.anno 
-d /projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0/annotation/drill_file 
-M /projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0.2/config/memory_info.txt 
-D /data5/bsi/bictools/scripts/bior_annotate/v2.4.1//scripts 
-T /projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0.2/config/tool_info.txt 
-t 1 
-l FALSE 
-j /data5/bsi/bictools/scripts/bior_annotate/v2.4.1//scripts/Info_extract2.pl 
-c
-Running CAVA
-
------------------------------------------------------------------------
-CAVA (Clinical Annotation of VAriants) v1.0.0 is now running.
-Started:  2016-02-22 19:06:42.004544 
-
-Configuration file:  /data5/bsi/bictools/src/cava/1.0.0.mayo/config.txt
-Input file (VCF):    varscan_DW_subset.vcf000.anno
-Output file (VCF):   varscan_DW_subset.vcf000.anno.tmp.vcf
-
-Input file contains 14919 records to annotate.
-
-Annotating variants ... 0.0%Annotating variants ... 6.7%Annotating variants ... 13.4%Annotating variants ... 20.1%Annotating variants ... 26.8%Annotating variants ... 33.5%Annotating variants ... 40.2%Annotating variants ... 46.9%Annotating variants ... 53.6%Annotating variants ... 60.3%Annotating variants ... 67.0%Annotating variants ... 73.7%Annotating variants ... 80.4%Annotating variants ... 87.1%Annotating variants ... 93.8%Annotating variants ... 100.0% - Done.
-
-(Size of output file: 29675.0 Kbyte)
-
-CAVA (Clinical Annotation of VAriants) successfully finished.
-Ended:  2016-02-22 19:22:20.483266
------------------------------------------------------------------------
-
-Making table file
-Drilling into the data
-#######################################################

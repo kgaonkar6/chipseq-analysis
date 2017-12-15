@@ -1,6 +1,0 @@
-To use a new set of training bams we need to change the TRAININGBAM in the panel config ; 
-The sampleMetaData parameter only creates the qc.metadat file?
-
-updated /data2/bsi/staff_analysis/m139467/vcf_scripts/run_cnvAnalyses_3.pl 
-changed perl version: /data2/bsi/staff_analysis/m139467/vcf_scripts/mergeSegmentVCFs.pl
-
