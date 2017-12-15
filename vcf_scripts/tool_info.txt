@@ -1,0 +1,204 @@
+## path to all the tools and references to run workflow
+### no change
+##references
+REF_GENOME=/data2/bsi/reference/sequence/human/ncbi/hg19/allchr.fa
+BWA_REF=/data2/bsi/reference/sequence/human/ncbi/hg19/indexed/allchr
+KGENOME_REF=/data2/bsi/reference/annotation/1KGenome/1000G_phase1.snps.high_confidence.hg19.vcf.gz
+DBSNP_VCF=/data2/bsi/reference/annotation/dbSNP/hg19/dbsnp_137.hg19.vcf.gz
+HAPMAP_VCF=/data2/bsi/reference/annotation/hapmap/hapmap_3.3.hg19.sites.vcf.gz
+OMNI_VCF=/data2/bsi/reference/annotation/1KGenome/1000G_omni2.5.hg19.vcf.gz
+NOVO_REF=/data2/bsi/reference/sequence/human/ncbi/hg19/indexed/allchr.nix
+MILLS_REF=/data2/bsi/reference/annotation/1KGenome/Mills_and_1000G_gold_standard.indels.hg19.vcf.gz
+BLAT_ED_REF=/data2/bsi/reference/annotation/blat/allsitesED.vcf.gz
+REF_FLAT=/data5/bsi/refdata-new/ucsc/multi/annotation_database/hg19/downloaded/2014_11_13/refFlat.txt
+
+## exome samples
+CAPTUREKIT=/data5/bsi/refdata/exomeCapture/GenomeGPS/3.0/Agilent_S04380219_SureSelect_Human_All_Exon_V5+UTRs_hg19.capture.bed
+ONTARGET=/data5/bsi/refdata/exomeCapture/GenomeGPS/3.0/Agilent_S04380219_SureSelect_Human_All_Exon_V5+UTRs_hg19_ucsc_refFlat_2014-11-13_10bp.target.bed
+
+### annotation
+BIOR=/usr/local/biotools/bior_scripts/2.4.0/bior_pipeline-2.4.0/bin/
+BIOR_CATALOGS=/projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0/annotation/catalog_file
+BIOR_DRILLS=/projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0/annotation/drill_file
+BIOR_PROFILE=/usr/local/biotools/bior_scripts/2.4.0/PKG_PROFILE
+SAVANT=/data5/bsi/bictools/annotation/SAVANT/1.1.0/savant.py
+SAVANT_CONFIG=/data5/bsi/bictools/annotation/SAVANT/1.1.0/config.txt
+SNPEFF=/projects/bsi/bictools/apps/annotation/snpeff/3.5h
+SNPEFF_DB=GRCh37.74
+
+
+### aligners
+BWA=/data5/bsi/bictools/alignment/bwa/0.7.10
+NOVOALIGN=/projects/bsi/bictools/apps/alignment/novoalign/3.02.04
+
+### callers
+SOMATIC_SNIPER=/data5/bsi/bictools/src/somatic_sniper/1.0.4/build/bin/bam-somaticsniper
+JOINTSNVMIX=/projects/bsi/bictools/apps/variant_detection/jointsnvmix/0.8-b2
+MUTECT=/projects/bsi/bictools/apps/variant_detection/muTect/1.1.4
+
+### executables
+SGE=/home/oge/ge2011.11/bin/linux-x64/qsub
+PERL=/usr/bin/perl
+R=/usr/local/biotools/r/R-3.1.1/bin
+JAVA6=/usr/local/biotools/java/jre1.6.0_20/bin
+JAVA7=/usr/local/biotools/java/jdk1.7.0_03/bin
+PYTHON=/usr/local/biotools/python/2.7/bin
+BASH=/bin/bash
+GUNZIP=/usr/bin/gunzip
+GZIP=/usr/bin/gzip
+MAIL=/bin/mailx
+TAR=/bin/tar
+FIND=/usr/bin/find
+FINGER=/usr/bin/finger
+
+#### misc tools
+BEDTOOLS=/data5/bsi/bictools/alignment/bedtools/2.20.1/bin
+FASTQC=/data5/bsi/bictools/qc/FastQC/0.11.2
+
+###all other modules of GATK
+GATK=/data5/bsi/bictools/alignment/gatk/3.3-0
+###to run somatic indel detector
+GATK_OLD=/projects/bsi/bictools/apps/alignment/GenomeAnalysisTK/1.6.9-g47df7bb
+### to run GVCF tool, modified version of GATK
+GATK_GVCF=/projects/bsi/bictools/apps/alignment/GenomeAnalysisTK/2.1-gvcf
+
+### misc tools
+PICARD=/data5/bsi/bictools/alignment/picard/1.119
+SAMTOOLS=/data5/bsi/bictools/alignment/samtools/1.0
+TABIX=/projects/bsi/bictools/apps/misc/tabix/0.2.5
+CUTADAPT=/projects/bsi/bictools/apps/alignment/cutadapt/1.2.1/bin
+GVCF=/projects/bsi/bictools/apps/variant_detection/gvcftools/0.11/bin
+
+#### SV tools
+PATTERNCNV=/projects/bsi/bioinf_int/s112423.PatternCNV/tags/1.1
+
+### libraries
+PYTHONLIB=/data2/bsi/RandD/pacbio/smrtanalysis-1.2.1/analysis/lib/python2.5:/projects/bsi/bictools/apps/metadata/genomedata/arch/Linux-x86_64/lib/python2.5:/projects/bsi/bictools/apps/metadata/genomedata/arch/Linux-x86_64/lib/python2.7:/data5/bsi/bictools/lib/python2.7/:/home/m087494/usr/local/biotools/python/2.7/lib/python2.7/site-packages:/projects/bsi/bictools/apps/language/pysam/0.6/
+PERLLIB=/projects/bsi/bictools/apps/sv/crest/bin:/projects/bsi/bictools/apps/sv/crest/bin/modules/lib/5.10.0:/projects/bsi/bictools/lib/perl/usr/local/biotools/perl/5.8.8-64/lib/site_perl/5.8.8/lib/perl5:/projects/bsi/bictools/apps/sv/SoftSearch/2.2/lib/perl5:/usr/local/biotools/perl/5.10.0/lib/site_perl/5.10.0/x86_64-linux/
+RLIB=/data5/bsi/bictools/R
+
+### customized paramters
+HSR_SERVER=http://bucky/data_delivery/bic/
+BioRWeb_SERVER=http://biorweb.mayo.edu/
+PORTAL_SERVER=http://rcftomprod1
+VCF_MINER=http://vcfminer.mayo.edu
+FTP_SERVER=ftp://rcfisinl1-212/delivery/
+THREADS=4
+DATATHREADS=1
+PLATFORM=illumina
+CENTER=mayo
+
+### queue paramters
+QUEUE=ngs-sec -l medp=TRUE
+NOTIFICATION_OPTION=a
+SGE_STACK=10M
+
+###########
+############################################
+## flags
+##################
+#### work flow execution is divided into per chromosome if YES
+DO_ANALYSIS_PER_CHROMOSOME=YES
+#### NO for internal mayo BAMs and YES for external BAMs
+REORDERSAM=NO
+#### YES to apply VQSR on germline variants
+GERMLINE_VARIANT_APPLY_VQSR=YES
+#### YES, if somatic calling is required
+SOMATIC_CALLING=NO
+#### YES if recalibration is needed on BAM file
+RECALIBRATION=YES
+#### YES if realignment is needed on BAM file
+REALIGNMENT=YES
+#### YES to apply VQSR on somatic variants
+SOMATIC_VARIANT_APPLY_VQSR=NO
+###YES if exome samples, else NO
+TARGETTED=YES
+### for multi sample calling, YES if want to realign multi sample
+MULTISAMPLE_REALIGN_RECAL=YES
+###picard remove duplicate reads
+## YES/NO to run picard Duplicate removal code
+MARKDUP=YES
+### YES/NO to keep reads after duplicate removal code
+REMOVE_DUP=NO
+###YES, if aligned BAM should be removed
+REMOVE_ALIGNED_BAM=NO
+### YES, if variant calling is not required
+STOP_AFTER_REALIGNMENT=NO
+### DEBUG MODE (YES, keeps all the intermediate files)
+DEBUG_MODE=NO
+### RUN GVCF module
+GVCF_MODULE=YES
+### RUN SV module
+SV_MODULE=YES
+###
+DASHBOARD=YES
+###
+RUN_QC=YES
+###########
+############################################
+#tool Parameters
+SOMATIC_SNIPER_params=-q 20 -Q 20 -F vcf
+MUTECT_params=
+JSM_Filter=-prob 0.1
+JOINTSNVMIX_params=--model snvmix2
+NOVO_params=-x 5 -i PE 425,80 -r Random --hdrhd off -v 120
+BWA_aln_params=-l 32
+BWA_sampe_params=
+BWA_samse_params=
+BWA_MEM_params=-M
+PICARD_ReadGroup_params=PL=illumina CN=mayo LB=hg19 CREATE_INDEX=true
+REORDER_params=CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT
+### we are assuming that you are using 4 threads, 3G per thread
+novosort_mem_params=--ram 12G --tmpcompression 0
+CUTADAPT_params=-O 5 -f fastq
+SamToFastq_params=INCLUDE_NON_PF_READS=True VALIDATION_STRINGENCY=SILENT
+CollectInsertSizeMetrics_params=MINIMUM_PCT=0.5 VALIDATION_STRINGENCY=SILENT  MAX_RECORDS_IN_RAM=2000000
+MarkDuplicates_params=COMPRESSION_LEVEL=0 SORTING_COLLECTION_SIZE_RATIO=0.15 MAX_RECORDS_IN_RAM=2000000 CO=MarkDuplicates PG=null VALIDATION_STRINGENCY=SILENT CREATE_INDEX=true
+
+### annotation tool
+SNPEFF_params= -noStats -canon -hgvs -lof -noLog 
+bior_annotate_params=-s -t
+
+#### sv tools
+PATTERNCNV_params=
+
+#### GATK tools
+## VQSR
+VQSR_params_SNV=-an QD -an MQRankSum -an ReadPosRankSum -an FS -an DP
+VQSR_params_INDEL=-an DP -an FS -an ReadPosRankSum -an MQRankSum --maxGaussians 4
+
+##realignment
+IndelRealigner_params=--maxReadsForRealignment 20000 --maxReadsInMemory 150000 -compress 0
+RealignerTargetCreator_params=
+
+## recalibration
+BaseRecalibrator_params=
+PrintReads_params=--bam_compression 0
+SplitReadGroup_PrintReads=
+
+### callers and vcf manipulators
+UnifiedGenotyper_params=--num_bam_file_handles 100
+HaplotypeCaller_params=-stand_call_conf 30 -stand_emit_conf 10
+## if gVCF mode which is single sample mode
+GenotypeGVCFs_params=
+SomaticIndelDetector_params=--window_size 1000
+VariantAnnotator_params=-A QualByDepth -A MappingQualityRankSumTest -A HomopolymerRun -A ReadPosRankSumTest -A HaplotypeScore -A Coverage -A MappingQualityZero -A DepthPerAlleleBySample -A RMSMappingQuality -A FisherStrand -A ChromosomeCounts
+ValidateVariants_params=
+CombineVariants_params=-dt NONE
+PhaseByTransmission_params=
+## coverage
+BaseCoverageDistribution_params=-fd -dt NONE
+
+### parameters
+JOB_LIMIT=2700
+ULIMIT=3000
+
+### WORKFLOW PATH ###
+ORACLE_TRC_DELIVERY=/data2/TRC/prod
+COMMON_SCRIPT_PATH=/projects/bsi/bictools/apps/misc/ngs_dashboard/2.0
+VCF_MINER_PATH=/data5/bsi/bictools/scripts/vcf-miner-cli/VCF-Miner.upload.sh
+DELIVERY_GENERATOR_PATH=/data5/bsi/bictools/scripts/maindocument
+GVCF_WORKFLOW_PATH=/projects/bsi/bictools/scripts/dnaseq/gVCF/tags/2.0
+WORKFLOW_PATH=/projects/bsi/bictools/scripts/dnaseq/GENOME_GPS/tags/3.0
+QC_PATH=/projects/bsi/gentools/src/ngs-infra/ngsvcqc/tags/1.0.2
+
