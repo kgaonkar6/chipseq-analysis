@@ -1,0 +1,33 @@
+
+get the merged peak file to get consistent regions across all the comparisons
+
+****************************************************************
+To get individual peak files for the samplesheet. Use the best FDR/qvalue for the region
+perl get_intersect_best.pl [bed for mark] [caller] [mergedBed] [outdir]
+*************************************************************
+To run diffBind. Make a list of filenames<tab>group
+get_samplesheet.sh [work dir] [marks] [file list]
+*************************************************************
+To run diffBind package
+Rscript diffbind.R [samplesheet] [name]
+*************************************************************
+
+To filter the regions and assign them to genes
+
+Filtering on report 
+FDR=0.05
+p value= 0.05
+conc=5
+
+cat report_K9me3_c_d.txt |awk -F " " '{if ($5 >5 && $6>5 && $9<=0.05 && $NF<=0.05)print $0}'|cut -d " " -f 2-|tr " " "\t"|sed 's/"//g' > report_K9me3_c_d_filtered.bed
+***************************************************************
+for file in *filtered.bed;do name=$(basename $file .bed|sed 's/_filtered/.filtered/g');perl /data2/bsi/staff_analysis/m139467/diffBind/combine.pl $file /data2/bsi/staff_analysis/m139467/diffBind/refGene.Genes2.hg19.txt ${name}_20kbup_10kbdown.xls 2000 1000; done
+
+sort -V -k1,2
+
+get heatmap for all the groups ; row dendogram=common genes
+./heatmap.R /data2/delivery/Urrutia_Raul_rxu01/151231_SN725_0527_AC83LNACXX/tertiary/diffBind/report_old/DB_K4me3_FDR0.05.txt <pdf file>
+
+get venn diagram for all the marks/RNA seq
+./venn_diagram.R
+ 
