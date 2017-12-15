@@ -1,0 +1,20 @@
+###library(gplots)
+#require(VennDiagram)
+#source("http://www.bioconductor.org/biocLite.R")
+#class(biocLite)
+#biocLite("limma")
+
+library(limma)
+Intersectlist<-read.table ("/data2/bsi/secondary/Lee_Jeong_m106728/old_MBA_ex/macs2out_nomodel/intersect_Faire.bed", header=T)
+
+vennCounts (Intersectlist[,c(1:6)])
+pdf ("Faire_intersect.pdf")
+vennDiagram(Intersectlist[,c(2:6)])
+vennDiagram(Intersectlist[,c(2:5)])
+vennDiagram(Intersectlist[,c(1:4)])
+vennDiagram(Intersectlist[,c(1,2)])
+vennDiagram(Intersectlist[,c(1,3)])
+vennDiagram(Intersectlist[,c(1,4)])
+vennDiagram(Intersectlist[,c(1,5)])
+vennDiagram(Intersectlist[,c(1,6)])
+
